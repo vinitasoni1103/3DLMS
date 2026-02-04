@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5000'; // your backend URL
+const BASE_URL = 'http://localhost:5000'; 
 
 export const fetchModels = async () => {
   const res = await axios.get(`${BASE_URL}/api/models`);
@@ -24,6 +24,6 @@ export const deleteModel = async (id) => {
 };
 
 export const fetchUsers = async () => {
-  const res = await axios.get('/api/users');  // endpoint should match backend
+  const res = await axios.get('/api/users');  
   return res.data;
 };

@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:5000/api/users'; // Update if needed
+const API_BASE = 'http://localhost:5000/api/users';
 
 export const fetchUsers = async () => {
   const res = await fetch(API_BASE);
@@ -8,7 +8,7 @@ export const fetchUsers = async () => {
 // services/userApi.js
 export const updateAssignedModels = async (userId, modelIds) => {
   const res = await fetch(`http://localhost:5000/api/users/${userId}/assign-models`, {
-    method: 'POST', // ✅ Match your backend route method
+    method: 'POST', 
     headers: {
       'Content-Type': 'application/json',
     },
